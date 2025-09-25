@@ -1,13 +1,7 @@
-function mostrarSecao(id) {
-  // Esconde todas as seções
-  const secoes = document.querySelectorAll(".secao");
-  secoes.forEach(sec => {
-    sec.classList.remove("ativa");
-  });
+function mostrarSecao(secaoId) {
+  const secoes = document.querySelectorAll('.secao');
+  secoes.forEach(secao => secao.classList.remove('ativa'));
 
-  // Ativa a solicitada
-  const s = document.getElementById(id);
-  if (s) {
-    s.classList.add("ativa");
-  }
+  const secaoAtiva = document.getElementById(secaoId);
+  secaoAtiva.classList.add('ativa');
 }
