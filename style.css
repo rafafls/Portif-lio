@@ -125,3 +125,66 @@ footer {
     gap: 10px;
   }
 }
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.foto-sobre {
+  width: 50px;             /* tamanho inicial pequeno */
+  height: 50px;
+  border-radius: 50%;       /* círculo */
+  object-fit: cover;
+  opacity: 0;               /* invisível inicialmente */
+  transform: scale(0.5);    /* reduzida no início */
+  transition: transform 0.6s ease, opacity 0.6s ease; /* animação suave */
+}
+
+/* Foto ativa (cresce e aparece) */
+.foto-sobre.ativa {
+  width: 150px;             /* tamanho final */
+  height: 150px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Logo no rodapé (menor e discreto) */
+.corinthians-logo-footer {
+  width: 18px;
+  height: auto;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+  .corinthians-logo-footer {
+    width: 14px; /* bem discreto no rodapé */
+  }
+
+  .lista-contato {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lista-contato li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .lista-contato a {
+    text-decoration: none;
+    color: #333; /* cor padrão */
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .lista-contato a:hover {
+    color: #0077b5; /* azul LinkedIn, destaque no hover */
+  }
+  
+  /* Estilo extra: cada rede pode ter sua cor */
+  .lista-contato li:nth-child(2) a:hover { color: #25D366; } /* WhatsApp verde */
+  .lista-contato li:nth-child(3) a:hover { color: #E4405F; } /* Instagram rosa */
+  .lista-contato li:nth-child(4) a:hover { color: #1137b3; }    /* GitHub preto */
+  .lista-contato li:nth-child(5) a:hover { color: #0077b5; } /* LinkedIn azul */
