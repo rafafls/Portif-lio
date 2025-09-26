@@ -5,6 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfólio Rafael</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Link do Font Awesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* FIXAR O RODAPÉ */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background: #f1f1f1;
+      padding: 10px;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+
+    /* CONTATO COM ÍCONES */
+    .lista-contato {
+      list-style: none;
+      padding: 0;
+    }
+    .lista-contato li {
+      margin: 10px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .lista-contato a {
+      text-decoration: none;
+      color: #333;
+    }
+    .lista-contato i {
+      font-size: 18px;
+      color: #0073e6;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -56,10 +93,10 @@
         <h2>Contato</h2>
         <p>Você pode me encontrar aqui:</p>
         <ul class="lista-contato">
-          <li>Email: seuemail@exemplo.com</li>
-          <li>Telefone: (00) 00000-0000</li>
-          <li>Instagram: @seuusuario</li>
-          <li>GitHub: <a href="https://github.com/seuusuario" target="_blank">github.com/seuusuario</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></li>
+          <li><i class="fas fa-phone"></i> (00) 00000-0000</li>
+          <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/seuusuario" target="_blank">@seuusuario</a></li>
+          <li><i class="fab fa-github"></i> <a href="https://github.com/seuusuario" target="_blank">github.com/seuusuario</a></li>
         </ul>
       </section>
     </main>
@@ -72,5 +109,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
