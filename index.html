@@ -8,51 +8,16 @@
   <link rel="icon" href="portifolio.png" type="image/png">
   <!-- Link do Font Awesome para os ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    /* FIXAR O RODAPÉ */
-    footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      background: #f1f1f1;
-      padding: 10px;
-      font-size: 14px;
-      border-top: 1px solid #ccc;
-    }
-
-    /* CONTATO COM ÍCONES */
-    .lista-contato {
-      list-style: none;
-      padding: 0;
-    }
-    .lista-contato li {
-      margin: 10px 0;
-      font-size: 16px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .lista-contato a {
-      text-decoration: none;
-      color: #333;
-    }
-    .lista-contato i {
-      font-size: 18px;
-      color: #0073e6;
-    }
-  </style>
 </head>
 <body>
   <div class="container">
-
     <header>
       <h1>Rafael Flausino</h1>
       <nav>
         <ul>
           <li onclick="mostrarSecao('home')">Home</li>
           <li onclick="mostrarSecao('sobre')">Sobre</li>
+          <li onclick="mostrarSecao('Curriculo')">Curriculo</li>
           <li onclick="mostrarSecao('projetos')">Meus Projetos</li>
           <li onclick="mostrarSecao('contato')">Contato</li>
         </ul>
@@ -64,6 +29,16 @@
         <h2>Seja bem-vindo ao meu portfólio</h2>
         <p>Navegue entre as seções para conhecer meus projetos e habilidades.</p>
       </section>
+
+      <section id="Curriculo" class="secao">
+        <h2>Abaixo voce podera acessar meu Curriculo:</h2>
+        <div class="projeto-card">
+          <h3>Curriculo</h3>
+          <p>Rafael Gonçalves Flausino</p>
+          <a href="Currículo - Rafael Gonçalves Flausino .pdf" target="_blank" class="botao-projeto">Acessar Curriculo</a>
+        </div>
+      </section>
+
 
       <section id="sobre" class="secao">
         <h2>Sobre mim</h2>
@@ -132,7 +107,4 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
 
